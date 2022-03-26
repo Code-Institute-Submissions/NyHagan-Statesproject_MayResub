@@ -1,3 +1,12 @@
 body{
     background-color: aqua;
 }
+
+#logonav{
+    font-style: italic;
+    background-color: brown;
+}
+
+#searchnav{
+    background-color: rgb(141, 134, 29);
+}

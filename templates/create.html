@@ -2,12 +2,23 @@
 {% block content %}
 
 <div class="row">
-    <form class="col s12 m8 offset-m2">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{url_for('create')}}">
         <div class="card">
-            <div class="card-image">
-                <img src="static/media/photo1.jpeg">
-                <span class="card-title"><H2 ID="join">JOIN US</H2></span>
-            </div>
+            
+            <span class="card-title"><H2 ID="join">JOIN US</H2>
+                <div class="input-field col s12">
+                    <input placeholder="Create a Username" id="username" type="text" class="validate">
+                    <label for="username">User Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <input placeholder="Create a Password" id="password" type="text" class="validate">
+                    <label for="password">Password</label>
+                </div>
+                <input type="submit" value="Create your free Account">
+            </span>
+            
+            <img src="static/media/photo1.jpeg" class="photo">
+        
         </div>
     </form>
 </div>

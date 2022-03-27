@@ -46,7 +46,7 @@ def create():
         session["user"] = request.form.get("username").lower()
         flash("Your account was created successfully!")
         return redirect(url_for("profile", username=session["user"]))
-        
+
     return render_template("create.html")
 
 
@@ -79,7 +79,17 @@ def login():
 def profile(username):
     username = mongo.db.people.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
+    
+    if session["user"]:
+        return render_template("profile.html", username=username)
+
+    return redirect(url_for("login"))
+
+
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect(url_for("get_names"))
 
 
 if __name__ == "__main__":

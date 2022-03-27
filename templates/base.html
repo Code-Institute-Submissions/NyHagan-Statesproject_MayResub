@@ -21,10 +21,10 @@
                 <a href="{{ url_for('get_names')}}" class="brand-logo">STATES 'N' FACTS</a>
                 <ul class="right hide-on-med-and-down">
                   <li><a href="{{ url_for('get_names')}}">Home</a></li>
-                  <li><a href="{{ url_for('profile', username=session['user']) }}"></a></li>
+                  <li><a href="{{ url_for('profile', username=session['user']) }}"></a>Profile</li>
                   <li><a href="{{ url_for('create')}}">Create account</a></li>
                   <li><a href="{{ url_for('login') }}">log in</a></li>
-                  <li><a href="#">Log out</a></li>
+                  <li><a href="{{ url_for('logout') }}">Log out</a></li>
                 </ul>
               </div>
             </nav>

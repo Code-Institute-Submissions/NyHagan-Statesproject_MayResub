@@ -10,3 +10,8 @@ body{
 #searchnav{
     background-color: rgb(141, 134, 29);
 }
+
+#join{
+    color: rgb(101, 181, 228);
+    text-shadow: 2px;
+}

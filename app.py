@@ -28,7 +28,7 @@ def get_names():
 @app.route("/create", methods=["GET", "POST"])
 def create():
     if request.method == "POST":
-        # check if username already exists in db
+        
         existing_user = mongo.db.people.find_one(
             {"username": request.form.get("username").lower()})
 
@@ -42,7 +42,7 @@ def create():
         }
         mongo.db.people.insert_one(create)
 
-        # put the new user into 'session' cookie
+        
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
     return render_template("create.html")
@@ -50,6 +50,24 @@ def create():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    if  request.method == "POST":
+        existing_user = mongo.db.people.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if existing_user:
+            if check_password_hash(
+                existing_user["password"], request.form.get("password")):
+                    session["user"] = request.form.get("username").lower()
+                    flash("Welcome, {}".format(request.form.get("username")))
+
+            else:
+                flash("Incorrect Username and/or Password")
+                return redirect(url_for("login"))
+
+        else:
+            flash("Incorrect Username and/or Password")
+            return redirect(url_for("login"))
+
     return render_template("login.html")
 
 

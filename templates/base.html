@@ -23,6 +23,7 @@
                   <li><a href="{{ url_for('get_names')}}">Home</a></li>
               {% if session.user %}
                   <li><a href="{{ url_for('profile', username=session['user']) }}"></a>Profile</li>
+                  <li><a href="{{ url_for('fact') }}">Add!</a></li>
                   <li><a href="{{ url_for('logout') }}">Log out</a></li>
               {% else %}
                   <li><a href="{{ url_for('create')}}">Create account</a></li>

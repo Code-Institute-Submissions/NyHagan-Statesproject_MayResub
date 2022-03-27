@@ -92,6 +92,11 @@ def logout():
     return redirect(url_for("get_names"))
 
 
+@app.route("/fact", methods=["GET", "POST"])
+def fact():
+    return render_template("fact.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

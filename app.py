@@ -103,9 +103,6 @@ def fact():
         mongo.db.names.find_one_and_update({"state_name": find_state}, 
                                  {"$set": {"fun_fact": new_fact}}, 
                                  upsert=True)
-    
-    print(find_state)
-    print(new_fact)
 
     return render_template("fact.html")
 

@@ -103,6 +103,7 @@ def fact():
         mongo.db.names.find_one_and_update({"state_name": find_state}, 
                                  {"$set": {"fun_fact": new_fact}} 
                                  )
+        
         flash("A new Fact Has been Added!")
 
     return render_template("fact.html")

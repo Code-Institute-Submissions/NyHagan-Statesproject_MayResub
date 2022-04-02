@@ -94,6 +94,12 @@ def logout():
 
 @app.route("/fact", methods=["GET", "POST"])
 def fact():
+    if  request.method == "GET":
+        
+        mongo.db.names.find_one_and_update({"state_name": 'Arkansas'}, 
+                                 {"$set": {"fun_fact": "info goes here again"}}, 
+                                 upsert=True)
+    
     return render_template("fact.html")
 
 

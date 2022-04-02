@@ -94,12 +94,19 @@ def logout():
 
 @app.route("/fact", methods=["GET", "POST"])
 def fact():
-    if  request.method == "GET":
+    if  request.method == "POST":
         
-        mongo.db.names.find_one_and_update({"state_name": 'Arkansas'}, 
-                                 {"$set": {"fun_fact": "info goes "}}, 
+        find_state = request.form.get("find_state")
+
+        new_fact = request.form.get("add_fact")
+
+        mongo.db.names.find_one_and_update({"state_name": find_state}, 
+                                 {"$set": {"fun_fact": new_fact}}, 
                                  upsert=True)
     
+    print(find_state)
+    print(new_fact)
+
     return render_template("fact.html")
 
 

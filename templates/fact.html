@@ -4,7 +4,7 @@
     <h3 class="center-align">Add a fact</h3>
 
     <div class="row">
-        <form>
+        <form method="POST" action="{{ url_for('fact') }}">
             <div class="card-panel">
                 <nav id="searchnav">
                     <div class="nav-wrapper">
@@ -16,7 +16,7 @@
                       </form>
                     </div>
                   </nav>
-                <input type="text" placeholder="your fact goes here" name="add_fact">
+                <input type="text" placeholder="your fact goes here" name="add_fact" required>
 				        <input type="submit" value="add">	
                
             </div>

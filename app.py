@@ -101,10 +101,28 @@ def fact():
         new_fact = request.form.get("add_fact")
 
         mongo.db.names.find_one_and_update({"state_name": find_state}, 
-                                 {"$set": {"fun_fact": new_fact}}, 
-                                 upsert=True)
+                                 {"$set": {"fun_fact": new_fact}} 
+                                 )
+        flash("A new Fact Has been Added!")
 
     return render_template("fact.html")
+
+
+@app.route("/delfact", methods=["GET", "POST"])
+def delfact():
+    if  request.method == "POST":
+        
+        del_state = request.form.get("del_state")
+
+        mongo.db.names.find_one_and_update({"state_name": del_state}, 
+                                 {"$set": {"fun_fact":'-'}} 
+                                 )
+        flash("Fact has been Deleted")
+        return redirect(url_for('fact'))
+        print(del_state)
+
+    else:
+        return render_template("delfact.html")    
 
 
 if __name__ == "__main__":

@@ -97,7 +97,7 @@ def fact():
     if  request.method == "GET":
         
         mongo.db.names.find_one_and_update({"state_name": 'Arkansas'}, 
-                                 {"$set": {"fun_fact": "info goes here again"}}, 
+                                 {"$set": {"fun_fact": "info goes "}}, 
                                  upsert=True)
     
     return render_template("fact.html")

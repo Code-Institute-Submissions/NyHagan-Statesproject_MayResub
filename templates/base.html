@@ -19,7 +19,7 @@
             <nav id="logonav">
               <div class="nav-wrapper">
                 <a href="{{ url_for('get_names')}}" class="brand-logo">STATES 'N' FACTS</a>
-                <ul class="right hide-on-med-and-down">
+                <ul class="menu">
                   <li><a href="{{ url_for('get_names')}}">Home</a></li>
               {% if session.user %}
                   <li><a href="{{ url_for('profile', username=session['user']) }}"></a>Profile</li>

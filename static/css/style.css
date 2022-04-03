@@ -5,6 +5,7 @@ body{
 #logonav{
     font-style: italic;
     background-color: brown;
+    float: right;
 }
 
 #searchnav{
@@ -28,4 +29,18 @@ body{
 .intro{
     background-color: bisque;
     margin: auto;
+}
+
+.brand-logo{
+    float: left;
+}
+
+.menu{
+    float: right;
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+         text-size-adjust: 200px;
+    }
 }

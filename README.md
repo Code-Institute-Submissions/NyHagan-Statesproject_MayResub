@@ -59,3 +59,29 @@ The font was largely unchanged in this project, as a design choice, as I struggl
 - Site can be accessed across multiple devices and browsers
 
 - Visually striking abd good looking site
+
+## Technologies Used
+
+- ### Html
+
+- ### CSS
+
+- ### Javascript
+
+- ### Python
+
+## Libraries/Frameworks used
+
+- Materialize : Allowed me to create the collapsible elements in the project, as well as most other features in the html, that were mobile first in approach without compromising other devices.
+
+## Programs used
+
+- Git : Allowed me to push my changes to the repository
+
+- Github : Stores my repository
+
+- Gitpod : the editor where I write my code.
+
+- MongoDB: served as the database to store information
+
+- Heroku: Deployed the finished app

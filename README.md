@@ -47,3 +47,15 @@ I went with a hot colour scheme with vibrant colours to evoke a sense adventure 
 ## Font
 
 The font was largely unchanged in this project, as a design choice, as I struggled to find a font that would work better than the default font in displaying the information without compromising the look and feel of the site while also retaining a professional aesthetic.
+
+## Features
+
+- Responsive site that adapts to screen size
+
+- Ability of the user to log in and out of the site
+
+- Ability to add and remove information
+
+- Site can be accessed across multiple devices and browsers
+
+- Visually striking abd good looking site

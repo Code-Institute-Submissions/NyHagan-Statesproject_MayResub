@@ -96,9 +96,9 @@ def logout():
 def fact():
     if  request.method == "POST":
         
-        find_state = request.form.get("find_state")
+        find_state = request.form.get("find_state").capitalize()
 
-        new_fact = request.form.get("add_fact")
+        new_fact = request.form.get("add_fact").capitalize()
 
         mongo.db.names.find_one_and_update({"state_name": find_state}, 
                                  {"$set": {"fun_fact": new_fact}} 
@@ -113,7 +113,7 @@ def fact():
 def delfact():
     if  request.method == "POST":
         
-        del_state = request.form.get("del_state")
+        del_state = request.form.get("del_state").capitalize()
 
         mongo.db.names.find_one_and_update({"state_name": del_state}, 
                                  {"$set": {"fun_fact":'-'}} 

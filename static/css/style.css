@@ -28,19 +28,15 @@ body{
 
 .intro{
     background-color: bisque;
-    margin: auto;
+    
 }
 
-.brand-logo{
+.logo{
     float: left;
 }
 
 .menu{
     float: right;
+    
 }
 
-@media screen and (max-width: 480px) {
-    .menu {
-         text-size-adjust: 200px;
-    }
-}

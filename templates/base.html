@@ -18,8 +18,11 @@
         <div class="navbar-fixed">
             <nav id="logonav">
               <div class="nav-wrapper">
-                <a href="{{ url_for('get_names')}}" class="brand-logo">STATES 'N' FACTS</a>
-                <ul class="menu">
+                <div class="logo">
+                <a href="{{ url_for('get_names')}}">STATES 'N' FACTS</a>
+                </div>
+                <div class="menu">
+                <ul>
                   <li><a href="{{ url_for('get_names')}}">Home</a></li>
               {% if session.user %}
                   <li><a href="{{ url_for('profile', username=session['user']) }}"></a>Profile</li>
@@ -30,9 +33,10 @@
                   <li><a href="{{ url_for('login') }}">log in</a></li>
               {% endif %}    
                 </ul>
-              </div>
+               </div>
+               </div>
             </nav>
-          </div>
+        </div>
     </header>
 
     {% with messages = get_flashed_messages() %}

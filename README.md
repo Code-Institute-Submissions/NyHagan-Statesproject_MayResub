@@ -27,3 +27,18 @@ States 'N' Facts is an interactive app designed to Provide user generated inform
 ![App Screenshot](static/media/Screenshot2.jpeg)
 
 ![App Screenshot](static/media/Screenshot3.jpeg)
+
+
+## Design
+
+### Colour scheme
+I went with a hot colour scheme with vibrant colours to evoke a sense adventure as each state comes with its own interesting information. Most of the colors are similar to red and are striking to the eye, and will grab ones attention as soon as the site is launched.
+ 
+### Colours that were used
+
+| Color             | rgb                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Persian green | rgb(42, 157, 143) |
+| Maize crayola | rgb(233, 196, 106) |
+| Sandy brown| rgb(244, 162, 97)|
+| Burnt Sienna |rgb(231, 111, 81)  |

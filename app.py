@@ -110,7 +110,7 @@ def fact():
 
         else:
             flash("There is no state called " + find_state)
-
+    
     return render_template("fact.html")
 
 

@@ -10,7 +10,7 @@
               <div class="nav-wrapper">
                 <div class="input-field">
                   <label for="find_state">find a state</label>  
-                  <input id="search"  name="find_state" type="search" required>
+                  <input id="find_state"  name="find_state" type="search" required>
                 </div>
               </div>
             </nav>
@@ -20,9 +20,9 @@
           </div>
         </form>
         <br>
-        <submit id="delete">
-        <a  href="{{ url_for('delfact') }}">Delete a Fact</a>
-        </submit>
     </div>
+    <submit id="delete">
+      <a  href="{{ url_for('delfact') }}">Delete a Fact</a>
+    </submit>
 
 {% endblock %}

@@ -100,11 +100,16 @@ def fact():
 
         new_fact = request.form.get("add_fact").capitalize()
 
-        mongo.db.names.find_one_and_update({"state_name": find_state}, 
+        if mongo.db.names.find_one({"state_name": find_state}):
+
+            mongo.db.names.find_one_and_update({"state_name": find_state}, 
                                  {"$set": {"fun_fact": new_fact}} 
                                  )
-        
-        flash("A new Fact Has been Added!")
+
+            flash("A new Fact Has been Added!")
+
+        else:
+            flash("There is no state called " + find_state)
 
     return render_template("fact.html")
 

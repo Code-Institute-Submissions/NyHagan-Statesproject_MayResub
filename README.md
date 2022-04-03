@@ -185,3 +185,7 @@ This Project was deployed via Heroku
 - animations
 
 - larger array of photos
+
+## Support
+
+email nanaohagan@gmail for any support

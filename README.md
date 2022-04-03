@@ -147,3 +147,32 @@ The site was tested on a Samsung galsxy s21 as well as a regular pC, the site wa
 I fixed this by adding an extra condition wihin the code to ensure that the entry actually existed within mongodb amd to display an error if it did not.
 
 - There was a bug where mongo db was unable to store information entered by user, and would come back as null in the database,I fixed this by converting the entries into a string before being fed to mongoDB.
+
+
+# Deployment
+
+This Project was deployed via Heroku
+
+### Timeline
+- Repository was located after logging in to github : https://github.com/NyHagan/Statesproject
+- Launched Heroku
+- Created a new App called States 'N' Facts
+- Attached this app to github in order to deploy
+
+### Cloning My Repository
+- Locate My Repository via github : https://github.com/NyHagan/Statesproject
+- Click on the green 'code' button to create a local clone
+
+### Heroku
+
+- Launch Heroku and create an account
+
+- Click Create a new app and follow guidelines
+
+- Name app and choose region
+
+- Click Github and eter repository name and click connect
+
+- scroll down and enter relevant config vars
+
+- Deploy

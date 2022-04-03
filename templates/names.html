@@ -1,27 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
-<h5>Below are all 50 US Sates, their capitals and the year they become full-fledged States, Log in and add an interesting fact</h5>
-    <ul class="collapsible">
-        {% for name in names %}
-        <li>
-            <div class="collapsible-header white-text orange  text-shadow">
-                <strong>{{ name.state_name }}</strong>
-            </div>
-            <div class="collapsible-body">
-                <span>
-                    {{ name.capital }}
-                </span><br>
-                <span>
-                    {{ name.founded }}
-                </span><br>
-                <span>
-                    {{ name.fun_fact }}
-                </span><br>
-            </div>
-        </li>
+<div>
+    <h5>Below are all 50 US Sates, their capitals and the year they become full-fledged States, Log in and add an interesting fact</h5>
+</div>
+        <ul class="collapsible">
+            {% for name in names %}
+            <li>
+                <div class="collapsible-header white-text orange  text-shadow">
+                    <strong>{{ name.state_name }}</strong>
+                </div>
+                <div class="collapsible-body">
+                    <span>
+                        {{ name.capital }}
+                    </span><br>
+                    <span>
+                        {{ name.founded }}
+                    </span><br>
+                    <span>
+                        {{ name.fun_fact }}
+                    </span><br>
+                </div>
+            </li>
         
-        {% endfor %}
-    </ul>
+            {% endfor %}
+        </ul>
 
 
 {%endblock%}

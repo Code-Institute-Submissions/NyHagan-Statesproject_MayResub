@@ -189,3 +189,16 @@ This Project was deployed via Heroku
 ## Support
 
 email nanaohagan@gmail for any support
+
+## Author
+
+Nana Hagan
+- [@NyHagan](https://github.com/NyHagan)
+
+## Acknowledgements
+
+- My Mentor Spencer Barriball
+
+- Code Institute
+
+- The Learning People

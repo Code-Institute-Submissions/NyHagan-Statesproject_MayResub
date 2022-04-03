@@ -19,3 +19,11 @@ States 'N' Facts is an interactive app designed to Provide user generated inform
 - As the owner, I want my site to be easily navigated.
 - As the owner, I want my users to be able to add and remove data without any issues.
 - As the owner, I want the user to be able to log in as well as log out easily.
+
+## Planning
+
+### Wireframes
+
+![App Screenshot](static/media/Screenshot2.jpeg)
+
+![App Screenshot](static/media/Screenshot3.jpeg)

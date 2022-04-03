@@ -4,7 +4,7 @@ body{
 
 #logonav{
     font-style: italic;
-    background-color: brown;
+    background-color: rgb(231, 111, 81);
     float: right;
 }
 
@@ -40,3 +40,6 @@ body{
     
 }
 
+.collapsible-header{
+    background-color: rgb(244, 162, 97);
+}

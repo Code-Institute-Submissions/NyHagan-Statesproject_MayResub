@@ -85,3 +85,65 @@ The font was largely unchanged in this project, as a design choice, as I struggl
 - MongoDB: served as the database to store information
 
 - Heroku: Deployed the finished app
+
+# Running Tests
+
+ ## Validators used
+
+The validators below were used to check my cide via URL to endure there were no errors with it.
+Javascript however was checked locally.
+ -  ## W3C Markup validator
+
+Base.html : No errors were found 
+
+fact.html : No errors were found
+
+delfact.html : No errors were found
+
+create.html : No errors were found
+
+login.html : No errors were found
+
+names.html : No errors were found
+
+profile.html : No errors were found
+
+
+
+ -  ## W3C CSS validator
+ Style.css : No errors were found
+
+
+
+ -  ## JSHint Javascript code quality checker
+ Script.js : No errors were found 
+
+ 
+
+
+ ## Testing against my User Goals
+
+- ### As a user, I want to be able to easily navigate the site to find the information I need.
+I added a very prominent navigation bar which inidicates clearly to the user where they need to go in order to add/remove information
+
+- ### As a user, I want to see a visually appealing and responsive site.
+he site uses bright and appealing colours that also more importantly do not get in the way of the purpose of the site
+
+- ### As a user, I want to able to feel a sense of security.
+Users are able to securely log in and log out 
+
+- ### As a user, I want to be able to add , edit and delete information as needed.
+Users are able to create accounts and log in, which allows them to be able to add or make changes to the facts that are attached to each state.
+
+## Testing responsiveness on multiple screen sizes
+
+The site was tested on a Samsung galsxy s21 as well as a regular pC, the site was responsive and had no issues present. The min browser used was Google Chrome.
+
+
+
+## BUGS
+
+- There was a bug where after inputing a fact into the input field, even if the wrong information had been entered (e.g a word that was not one of the 50 states), the statement "a new fact has been added" would be displayed which would cause confusion.
+I fixed this by adding an extra condition wihin the code to ensure that the entry actually existed within mongodb amd to display an error if it did not.
+
+- There was a bug where mongo db was unable to store information entered by user, and would come back as null in the database,I fixed this by converting the entries into a string before being fed to mongoDB.

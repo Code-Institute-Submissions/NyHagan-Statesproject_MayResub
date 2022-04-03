@@ -3,7 +3,7 @@
 States 'N' Facts is an interactive app designed to Provide user generated information about the various States that make up the U.S.
  
 
-![App Screenshot](static/media/Screenshot1.png) 
+![App Screenshot](static/media/screenshot1.png) 
 
 ## User Experience
 
@@ -24,9 +24,9 @@ States 'N' Facts is an interactive app designed to Provide user generated inform
 
 ### Wireframes
 
-![App Screenshot](static/media/Screenshot2.jpeg)
+![App Screenshot](static/media/screenshot2.jpeg)
 
-![App Screenshot](static/media/Screenshot3.jpeg)
+![App Screenshot](static/media/screenshot3.jpeg)
 
 
 ## Design

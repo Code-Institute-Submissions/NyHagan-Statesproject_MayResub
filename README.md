@@ -176,3 +176,12 @@ This Project was deployed via Heroku
 - scroll down and enter relevant config vars
 
 - Deploy
+
+
+## Future optimisation
+
+- addiditon of a responsive dropdown for search functions
+
+- animations
+
+- larger array of photos

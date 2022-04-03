@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
-    <title>States N Facts</title>
+    <title>States N Facts</title> <!-- title of the app , materialize was used for these elements-->
 </head>
 <body>
   
@@ -24,7 +24,7 @@
                 <div class="menu">
                 <ul>
                   <li><a href="{{ url_for('get_names')}}">Home</a></li>
-              {% if session.user %}
+              {% if session.user %}<!-- allows for the user to only see navigations elements based on if they are logged in or not -->
                   <li><a href="{{ url_for('profile', username=session['user']) }}"></a>Profile</li>
                   <li><a href="{{ url_for('fact') }}">Add!</a></li>
                   <li><a href="{{ url_for('logout') }}">Log out</a></li>
@@ -38,7 +38,7 @@
             </nav>
         </div>
     </header>
-
+<!-- adding the ability for messages to flash on top of screen -->
     {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}

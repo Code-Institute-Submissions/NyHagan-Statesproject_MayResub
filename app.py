@@ -1,4 +1,4 @@
-import os
+import os #Allows flask and other elements to function
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
@@ -18,7 +18,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-@app.route("/")
+@app.route("/")#function to grab the documents from mongo and display on names.html
 @app.route("/get_names")
 def get_names():
     names = mongo.db.names.find()
@@ -91,8 +91,8 @@ def logout():
     session.clear()
     return redirect(url_for("get_names"))
 
-
-@app.route("/fact", methods=["GET", "POST"])
+#allows user to enter a fact and send it off to mongodb
+@app.route("/fact", methods=["GET", "POST"]) 
 def fact():
     if  request.method == "POST":
         
@@ -114,7 +114,7 @@ def fact():
     return render_template("fact.html")
 
 
-@app.route("/delfact", methods=["GET", "POST"])
+@app.route("/delfact", methods=["GET", "POST"])#delete a fact via this function
 def delfact():
     if  request.method == "POST":
         

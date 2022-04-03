@@ -1,3 +1,4 @@
+/* background color set to persian green */
 body{
     background-color:rgb(42, 157, 143);
 }
@@ -30,6 +31,7 @@ body{
     float: left;
 }
 
+/* wanted the menu on the right side */
 .menu{
     float: right;
     

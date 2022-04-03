@@ -116,7 +116,7 @@ def delfact():
         del_state = request.form.get("del_state").capitalize()
 
         mongo.db.names.find_one_and_update({"state_name": del_state}, 
-                                 {"$set": {"fun_fact":'-'}} 
+                                 {"$set": {"fun_fact":''}} 
                                  )
         flash("Fact has been Deleted")
         return redirect(url_for('fact'))

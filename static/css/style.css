@@ -13,11 +13,6 @@ body{
     background-color:  rgb(233, 196, 106)
 }
 
-#join{
-    color: rgb(101, 181, 228);
-    text-shadow: 2px;
-}
-
 .card{
     border-radius: 15px;
     background-color: bisque;

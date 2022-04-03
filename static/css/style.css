@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: grey;
 }
 
 #logonav{
@@ -23,4 +23,8 @@ body{
 
 .photo{
     position: relative;
+}
+
+.intro{
+    background-color: bisque;
 }

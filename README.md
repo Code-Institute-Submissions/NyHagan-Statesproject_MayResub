@@ -42,3 +42,8 @@ I went with a hot colour scheme with vibrant colours to evoke a sense adventure 
 | Maize crayola | rgb(233, 196, 106) |
 | Sandy brown| rgb(244, 162, 97)|
 | Burnt Sienna |rgb(231, 111, 81)  |
+
+
+## Font
+
+The font was largely unchanged in this project, as a design choice, as I struggled to find a font that would work better than the default font in displaying the information without compromising the look and feel of the site while also retaining a professional aesthetic.

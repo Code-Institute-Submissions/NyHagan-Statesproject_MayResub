@@ -16,15 +16,12 @@
             </nav>
             <input type="text" placeholder="your fact goes here" name="add_fact" required>
 				    <input type="submit" value="add">	
-               
           </div>
         </form>
         <br>
     </div>
-    <form>
-      <submit id="delete">
-        <a  href="{{ url_for('delfact') }}">Delete a Fact</a>
-      </submit>
-    </form>
+    <div class="delete">
+      <a href="{{ url_for('delfact') }}">DELETE A FACT</a>
+    </div>
 
 {% endblock %}

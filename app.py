@@ -25,7 +25,7 @@ def get_names():
     return render_template("names.html", names=names)
 
 
-@app.route("/create", methods=["GET", "POST"])
+@app.route("/create", methods=["GET", "POST"])#allows for account creation
 def create():
     if request.method == "POST":
         
@@ -50,7 +50,7 @@ def create():
     return render_template("create.html")
 
 
-@app.route("/login", methods=["GET", "POST"])
+@app.route("/login", methods=["GET", "POST"])#authentication to allow logging in
 def login():
     if  request.method == "POST":
         existing_user = mongo.db.people.find_one(

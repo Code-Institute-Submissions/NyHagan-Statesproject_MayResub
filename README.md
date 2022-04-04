@@ -137,7 +137,7 @@ Users are able to create accounts and log in, which allows them to be able to ad
 
 ## Testing responsiveness on multiple screen sizes
 
-The site was tested on a Samsung galsxy s21 as well as a regular pC, the site was responsive and had no issues present. The min browser used was Google Chrome.
+The site was tested on a Samsung galaxy s21 as well as a regular PC, the site was responsive and had no issues present. The main browser used was Google Chrome.
 
 
 

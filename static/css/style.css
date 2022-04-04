@@ -40,3 +40,7 @@ body{
     background-color: black;
     float: right;
 }
+
+#photo{
+    width: 300px;
+}

@@ -1,11 +1,11 @@
 /* background color set to persian green */
 body{
-    background-color:rgb(42, 157, 143);
+    background-color:rgb(142, 202, 230);
 }
 
 #logonav{
     font-style: italic;
-    background-color: rgb(231, 111, 81);
+    background-color: rgb(65, 72, 51);
     float: right;
 }
 
@@ -33,11 +33,10 @@ body{
 }
 
 .collapsible-header{
-    background-color: rgb(244, 162, 97);
+    background-color: rgb(2, 48, 71);
 }
 
 .delete{
-    background-color: black;
     float: right;
 }
 

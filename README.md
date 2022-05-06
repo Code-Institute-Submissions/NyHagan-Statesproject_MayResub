@@ -38,9 +38,9 @@ I went with a hot colour scheme with vibrant colours to evoke a sense adventure 
 
 | Color             | rgb                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Persian green | rgb(42, 157, 143) |
-| Maize crayola | rgb(233, 196, 106) |
-| Sandy brown| rgb(244, 162, 97)|
+| Dark green | rgb(65, 72, 51) |
+| Sky Blue | rgb(142, 202, 230) |
+| Dark blue| rgb(2, 48, 71)|
 | Burnt Sienna |rgb(231, 111, 81)  |
 
 
